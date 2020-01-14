@@ -1,0 +1,14 @@
+type User {
+  id: ID!
+  locale: String!
+  tz: String!
+  username: String!
+  email: String!
+  lists: [List]
+}
+
+type List {
+  id: ID!
+  name: String
+  tasks(completed: Boolean): [Task]
+}

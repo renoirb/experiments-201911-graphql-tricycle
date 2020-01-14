@@ -1,0 +1,63 @@
+{
+  "name": "experiments-201911-graphql-tricycle",
+  "version": "0.1.16",
+  "private": true,
+  "description": "An experiment on how to write a GraphQL service either serving from filesystem, or re-using from cache",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/renoirb/experiments-201911-graphql-tricycle.git"
+  },
+  "license": "UNLICENSED",
+  "exports": {
+    ".": "dist/index.esm.js"
+  },
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "use-run-all build:*",
+    "build:node-esm": "use-bili --target node --format esm --file-name index.esm.js",
+    "clean": "use-rimraf .rpt2_cache dist *.*.log *.tgz",
+    "dev": "nodemon",
+    "fix": "use-prettier --write '**/*.{json,js,ts,md,graphql}'",
+    "just-scripts": "just-scripts",
+    "lint": "just-scripts lint",
+    "lint:fix": "just-scripts lint --fix",
+    "prepublishOnly": "rushx build",
+    "test": "use-jest --detectOpenHandles",
+    "test:snapshots": "use-jest --detectOpenHandles -u"
+  },
+  "dependencies": {
+    "graphql-import-node": "^0.0.2",
+    "load-json-file": "^6.2.0",
+    "merge-graphql-schemas": "^1.7.3"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.4.0",
+    "@renoirb/conventions-use-bili": "^1.0.2",
+    "@renoirb/conventions-use-eslint": "^1.0.1",
+    "@renoirb/conventions-use-jest": "^1.0.1",
+    "@renoirb/conventions-use-prettier": "^1.0.1",
+    "@renoirb/conventions-use-typescript-3": "^1.0.2",
+    "@renoirb/tools-bundling-helpers": "^1.0.2",
+    "@rushstack/node-core-library": "^3.19.0",
+    "@types/node": "^10.14.17",
+    "apollo-server": "^2.9.9",
+    "casual": "^1.6.2",
+    "core-js": "^3.1.4",
+    "graphql": "^14.5.0",
+    "graphql-tag": "^2.10.1",
+    "graphql-tools": "^4.0.6",
+    "husky": "^4.2.0",
+    "just-scripts": "^0.31.1",
+    "lint-staged": "^10.0.0",
+    "nodemon": "^1.18.10",
+    "sort-package-json": "^1.38.0",
+    "spicery": "^1.1.0",
+    "ts-node": "^8.3.0",
+    "ts-node-dev": "^1.0.0-pre",
+    "typescript": "^3.6.0"
+  }
+}

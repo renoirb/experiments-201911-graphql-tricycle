@@ -1,0 +1,10 @@
+{
+  "ext": "json,ts,graphql,gql",
+  "exec": "node -r esm -r ts-node/register/transpile-only src/server",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ignore": ["dist/**", "logs/**"],
+  "verbose": true,
+  "watch": ["src"]
+}
