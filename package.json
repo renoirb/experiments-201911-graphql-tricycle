@@ -37,7 +37,7 @@
   "devDependencies": {
     "@babel/preset-env": "^7.4.0",
     "@renoirb/conventions-use-bili": "^1.0.2",
-    "@renoirb/conventions-use-eslint": "^1.0.1",
+    "@renoirb/conventions-use-eslint": "^1.2.1",
     "@renoirb/conventions-use-jest": "^1.0.1",
     "@renoirb/conventions-use-prettier": "^1.0.1",
     "@renoirb/conventions-use-typescript-3": "^1.0.2",
@@ -51,7 +51,7 @@
     "graphql-tag": "^2.10.1",
     "graphql-tools": "^4.0.6",
     "husky": "^4.2.0",
-    "just-scripts": "^0.31.1",
+    "just-scripts": "^2.5.0",
     "lint-staged": "^10.0.0",
     "nodemon": "^1.18.10",
     "sort-package-json": "^1.38.0",
