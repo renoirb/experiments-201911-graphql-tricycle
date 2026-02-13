@@ -38,7 +38,7 @@
     "@babel/preset-env": "^7.4.0",
     "@renoirb/conventions-use-bili": "^1.0.2",
     "@renoirb/conventions-use-eslint": "^1.0.1",
-    "@renoirb/conventions-use-jest": "^1.0.1",
+    "@renoirb/conventions-use-jest": "^1.2.1",
     "@renoirb/conventions-use-prettier": "^1.0.1",
     "@renoirb/conventions-use-typescript-3": "^1.0.2",
     "@renoirb/tools-bundling-helpers": "^1.0.2",
